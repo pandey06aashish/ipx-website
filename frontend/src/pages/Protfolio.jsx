@@ -10,9 +10,9 @@ const Protfolio = () => {
   const [activeSection, setActiveSection] = useState('products');
 
   return (
-    <div>
+    <div className='bg-gray-100'>
       {/* Toggle Button */}
-      <div className="flex justify-center items-center mt-6">
+      <div  className="flex  justify-center items-center pt-6">
         <div className="w-3/4 flex border-2 border-gray-300 rounded-md overflow-hidden">
           <button
             onClick={() => setActiveSection('products')}
@@ -122,29 +122,30 @@ const ProductSection = () => {
 
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-semibold text-center mb-6">Our Products</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="bg-white shadow-md rounded-lg flex flex-col overflow-hidden"
-          >
-            {/* Image Section */}
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-48 object-cover"
-            />
-            {/* Details Section */}
-            <div className="p-4 text-center">
-              <h3 className="text-lg font-medium text-gray-800">{product.name}</h3>
-              <p className="text-sm text-gray-600">{product.type}</p>
-            </div>
-          </div>
-        ))}
+<div className="p-6 bg-gray-100">
+  <h2 className="text-2xl font-semibold text-center mb-6">Our Products</h2>
+  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    {products.map((product) => (
+      <div
+        key={product.id}
+        className="bg-white shadow-md rounded-lg flex flex-col overflow-hidden"
+      >
+        {/* Image Section */}
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-48 object-cover"
+        />
+        {/* Details Section */}
+        <div className="p-4 text-center">
+          <h3 className="text-lg font-medium text-gray-800">{product.name}</h3>
+          <p className="text-sm text-gray-600">{product.type}</p>
+        </div>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 
@@ -167,24 +168,25 @@ const ClientSection = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-100">
-      <h2 className="text-2xl font-semibold text-center mb-6">Our Clients</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {clients.map((client) => (
-          <div
-            key={client.id}
-            className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center"
-          >
-            <img
-              src={client.logo}
-              alt={`${client.name} logo`}
-              className="h-32 w-32 object-contain mb-4"
-            />
-            <h3 className="text-lg font-medium text-gray-800">{client.name}</h3>
-          </div>
-        ))}
+<div className="p-6 bg-gray-100">
+  <h2 className="text-2xl font-semibold text-center mb-6">Our Clients</h2>
+  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    {clients.map((client) => (
+      <div
+        key={client.id}
+        className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center"
+      >
+        <img
+          src={client.logo}
+          alt={`${client.name} logo`}
+          className="h-32 w-32 object-contain mb-4"
+        />
+        <h3 className="text-lg font-medium text-gray-800">{client.name}</h3>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 

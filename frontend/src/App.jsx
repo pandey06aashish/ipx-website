@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import "./App.css";
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -9,30 +8,36 @@ import Packages from './pages/Packages';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Typewriter from 'typewriter-effect';
 
 const App = () => {
-  const [showBlinkEffect, setShowBlinkEffect] = useState(true);
+  const [showMainContent, setShowMainContent] = useState(false);
 
   useEffect(() => {
-    // Remove the blink effect after 5 seconds
     const timer = setTimeout(() => {
-      setShowBlinkEffect(false);
-    }, 5000);
+      setShowMainContent(true);
+    }, 8000);
 
-    return () => clearTimeout(timer); // Cleanup on component unmount
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
-      {showBlinkEffect ? (
-        // Blink effect component
-        <div className="flex items-center justify-center h-screen bg-black">
-          <h1 className="text-4xl font-bold text-white animate-blink">
-            Welcome to My Website
+      {!showMainContent ? (
+        <div className="flex items-center justify-center h-screen bg-blue-500">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white text-center px-6 py-4 ">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString('Welcome To IPX Technology')
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
           </h1>
         </div>
       ) : (
-        // Main website layout
         <>
           <Navbar />
           <div className="pt-[130px]">

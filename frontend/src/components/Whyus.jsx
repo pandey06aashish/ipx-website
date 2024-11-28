@@ -2,7 +2,7 @@ import React from "react";
 
 const Whyus= () => {
   return (
-    <section className="bg-white py-16">
+    <section className="py-16">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-black tracking-wide">
           WHY IPX
