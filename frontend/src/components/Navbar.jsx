@@ -14,28 +14,49 @@ const Navbar = () => {
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-md">
-      <div className="bg-gray-800 text-white text-sm">
-        <div className="container mx-auto flex justify-between items-center py-2 px-4">
-          <div className="flex items-center space-x-4">
-            <a href="#" className="hover:text-blue-500">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-blue-400">
-              <FaTwitter />
-            </a>
-            <a href="#" className="hover:text-pink-500">
-              <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-blue-700">
-              <FaLinkedinIn />
-            </a>
-          </div>
-          <div>
-            <span className="mr-4">📞 +9140401510</span>
-            <span>📧 ipxtechnology@gmail.com</span>
-          </div>
-        </div>
-      </div>
+     <div className="bg-gray-800 text-white text-sm">
+  <div className="container mx-auto flex justify-between items-center py-2 px-4">
+    {/* Social media icons for larger screens */}
+    <div className="hidden sm:flex items-center space-x-4">
+      <a href="#" className="hover:text-blue-500">
+        <FaFacebookF />
+      </a>
+      <a href="#" className="hover:text-blue-400">
+        <FaTwitter />
+      </a>
+      <a href="#" className="hover:text-pink-500">
+        <FaInstagram />
+      </a>
+      <a href="#" className="hover:text-blue-700">
+        <FaLinkedinIn />
+      </a>
+    </div>
+
+    {/* Phone and email for larger screens */}
+    <div className="hidden sm:flex">
+      <span className="mr-4">📞 +9140401510</span>
+      <span>📧 ipxtechnology@gmail.com</span>
+    </div>
+  </div>
+
+  {/* For mobile devices: Centered social media icons with increased gap */}
+  <div className="sm:hidden flex justify-center items-center py-2 px-4">
+    <div className="flex space-x-10"> {/* Increased gap from space-x-4 to space-x-6 */}
+      <a href="#" className="hover:text-blue-500">
+        <FaFacebookF />
+      </a>
+      <a href="#" className="hover:text-blue-400">
+        <FaTwitter />
+      </a>
+      <a href="#" className="hover:text-pink-500">
+        <FaInstagram />
+      </a>
+      <a href="#" className="hover:text-blue-700">
+        <FaLinkedinIn />
+      </a>
+    </div>
+  </div>
+</div>
 
       <nav className="bg-white">
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
