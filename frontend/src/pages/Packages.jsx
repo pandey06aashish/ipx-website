@@ -38,7 +38,6 @@ const Packages = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4">
-      {/* Heading Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Our Packages
@@ -51,7 +50,6 @@ const Packages = () => {
         </p>
       </div>
 
-      {/* Packages Section */}
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {packages.map((pkg, index) => (
           <div
@@ -89,7 +87,6 @@ const Packages = () => {
         ))}
       </div>
 
-      {/* Pricing Comparison Section */}
       <div className="mt-16 text-center">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
           Not Sure Which Package to Choose?

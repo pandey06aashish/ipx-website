@@ -14,7 +14,6 @@ const Navbar = () => {
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-md">
-      {/* Top Bar */}
       <div className="bg-gray-800 text-white text-sm">
         <div className="container mx-auto flex justify-between items-center py-2 px-4">
           <div className="flex items-center space-x-4">
@@ -38,17 +37,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navbar */}
       <nav className="bg-white">
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/">
               <img src={logo} alt="IPX Logo" className="w-28 md:w-36 lg:w-40" />
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <ul className="hidden sm:flex sm:gap-2 md:gap-3 lg:gap-5 lg:text-lg font-bold">
             <NavLink
               to="/"
@@ -94,14 +90,12 @@ const Navbar = () => {
             </NavLink>
           </ul>
 
-          {/* Quote Button */}
           <Link to="/contact">
             <button className="hidden sm:block bg-blue-500 text-white px-3 py-1 text-sm md:px-4 md:py-2 md:text-base rounded-lg hover:bg-blue-600 transition">
               Get A Quote
             </button>
           </Link>
 
-          {/* Mobile Menu Icon */}
           <img
             onClick={toggleMenu}
             src={menu_icon}
@@ -110,28 +104,24 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 h-full transition-transform duration-500 z-50 ${
-            visible ? 'translate-x-0' : 'translate-x-full'
-          } bg-white text-gray-600`}
+          className={`fixed top-0 right-0 h-full transition-transform duration-500 z-50 ${visible ? 'translate-x-0' : 'translate-x-full'
+            } bg-white text-gray-600`}
           style={{ width: '60%' }}
         >
           <div className="flex flex-col p-5 h-full">
-            {/* Close Menu */}
             <div onClick={toggleMenu} className="flex items-center mb-4 cursor-pointer">
               <img className="h-4 rotate-180" src={cross_icon} alt="close menu" />
               <p className="ml-2">Close</p>
             </div>
 
-            {/* Mobile Links */}
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/'>Home</NavLink>
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/about'>About</NavLink>
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/protfolio'>Protfolio</NavLink>
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/products'>Products</NavLink>
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/products'>Products</NavLink>
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/packages'>Packages</NavLink>
-          <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/contact'>Contact</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/'>Home</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/about'>About</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/protfolio'>Protfolio</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/products'>Products</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/products'>Products</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/packages'>Packages</NavLink>
+            <NavLink onClick={toggleMenu} className='py-2 pl-6 border-b' to='/contact'>Contact</NavLink>
           </div>
         </div>
       </nav>

@@ -5,7 +5,6 @@ const Contact = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-4 py-8">
       <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Contact Us</h1>
       <div className="bg-white shadow-md rounded-lg p-6 md:p-10 w-full flex flex-col md:flex-row">
-        {/* Left Side - Description */}
         <div className="md:w-1/2 p-4">
         <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-neutral-700 leading-tight">
          We'd 

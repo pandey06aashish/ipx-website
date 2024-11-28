@@ -1,6 +1,6 @@
 import React from "react";
 
-const Whyus= () => {
+const Whyus = () => {
   return (
     <section className="py-16">
       <div className="text-center mb-12">
@@ -12,9 +12,8 @@ const Whyus= () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-16 hover:transf">
-        {/* Card 1 */}
-        <div className="bg-blue-500 text-white p-8 rounded-md shadow-md">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-16 "> 
+        <div className="bg-blue-500 text-white p-8 rounded-md shadow-md duration-300 hover:scale-105 cursor-pointer">
           <h2 className="text-xl font-semibold mb-4">
             Certified Professional & Experts
           </h2>
@@ -24,9 +23,8 @@ const Whyus= () => {
           </p>
         </div>
 
-        {/* Card 2 */}
-        <div className="bg-blue-500 text-white p-8 rounded-md shadow-md">
-          <h2 className="text-xl font-semibold mb-4">
+        <div className="bg-blue-500 text-white p-8 rounded-md shadow-md duration-300 hover:scale-105 cursor-pointer">
+          <h2 className="text-xl font-semibold mb-4 ">
             We're fast, Accurate & Reliable
           </h2>
           <p className="text-base leading-relaxed">
@@ -36,8 +34,7 @@ const Whyus= () => {
           </p>
         </div>
 
-        {/* Card 3 */}
-        <div className="bg-blue-500 text-white p-8 rounded-md shadow-md">
+        <div className="bg-blue-500 text-white p-8 rounded-md shadow-md duration-300 hover:scale-105 cursor-pointer">
           <h2 className="text-xl font-semibold mb-4">
             We support you round the clock
           </h2>

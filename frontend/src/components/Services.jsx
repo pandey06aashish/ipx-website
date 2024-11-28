@@ -4,7 +4,7 @@ import { FaLaptopCode, FaCogs, FaRocket } from 'react-icons/fa';
 const Services = () => {
   return (
     <div>
-       <section id="services" className="py-16 bg-white ">
+      <section id="services" className="py-16 bg-white ">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-black tracking-wide">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-12">

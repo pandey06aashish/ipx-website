@@ -50,7 +50,6 @@ const Testimonials = () => {
       </h2>
       <div className="flex flex-col items-center mt-12">
         <div className="flex flex-col lg:flex-row gap-8 w-full lg:w-4/5 justify-between">
-          {/* Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
               src={testimonials[currentIndex].image}
@@ -59,13 +58,10 @@ const Testimonials = () => {
             />
           </div>
 
-          {/* Text Section */}
           <div className="w-full lg:w-1/2 max-w-xl flex flex-col justify-center px-4 lg:px-0">
-            {/* Client Name */}
             <span className="text-lg md:text-xl font-bold text-blue-500 text-center mb-4">
               {testimonials[currentIndex].name}
             </span>
-            {/* Client Review */}
             <p className="text-sm md:text-base text-center text-gray-700">
               {testimonials[currentIndex].review}
             </p>
