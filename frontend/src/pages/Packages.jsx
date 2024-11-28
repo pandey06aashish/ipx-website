@@ -5,13 +5,13 @@ const Packages = () => {
     {
       title: "Basic Package",
       description: "Ideal for small businesses to get started with essential IT solutions.",
-      price: "$199/month",
+      price: "₹19999/month",
       features: ["Website Development", "Basic Hosting", "Email Support"],
     },
     {
       title: "Professional Package",
       description: "Perfect for growing businesses needing advanced IT services.",
-      price: "$499/month",
+      price: "₹49999/month",
       features: [
         "Website + Mobile App Development",
         "Premium Hosting",
@@ -22,7 +22,7 @@ const Packages = () => {
     {
       title: "Enterprise Package",
       description: "Customized solutions for large enterprises with complex needs.",
-      price: "$999/month",
+      price: "₹80000/month",
       features: [
         "Custom Software Development",
         "Dedicated Hosting",

@@ -57,36 +57,69 @@ const ProductSection = () => {
       image: web1,
     },
     {
-      id: 5,
-      name: 'E-Commerce Website',
-      type: 'Website',
-      image: web1,
-    },
-    {
-      id: 6,
-      name: 'E-Commerce Website',
-      type: 'Website',
-      image: web1,
-    },
-    {
       id: 2,
+      name: 'E-Commerce Website',
+      type: 'Website',
+      image: web1,
+    },
+    {
+      id: 3,
+      name: 'E-Commerce Website',
+      type: 'Website',
+      image: web1,
+    },
+    {
+      id: 4,
       name: 'Mobile App',
       type: 'Application',
       image: web2,
     },
     {
-      id: 3,
+      id: 5,
       name: 'CRM Software',
       type: 'Software',
       image: web2,
     },
     {
-      id: 4,
+      id: 6,
       name: 'Marketing Service',
       type: 'Other Services',
       image: web1,
     },
+    {
+      id: 7,
+      name: 'Marketing Service',
+      type: 'Other Services',
+      image: web1,
+    },    {
+      id: 8,
+      name: 'Marketing Service',
+      type: 'Other Services',
+      image: web1,
+    },    {
+      id: 9,
+      name: 'Marketing Service',
+      type: 'Other Services',
+      image: web1,
+    },
+    {
+      id: 10,
+      name: 'CRM Software',
+      type: 'Software',
+      image: web2,
+    },    {
+      id: 11,
+      name: 'CRM Software',
+      type: 'Software',
+      image: web2,
+    },    {
+      id: 12,
+      name: 'CRM Software',
+      type: 'Software',
+      image: web2,
+    },
   ];
+
 
   return (
     <div className="p-6">
@@ -122,6 +155,15 @@ const ClientSection = () => {
     { id: 2, name: 'Company B', logo: log2 },
     { id: 3, name: 'Company C', logo: log3 },
     { id: 4, name: 'Company D', logo: log4 },
+    { id: 5, name: 'Company A', logo: log1 },
+    { id: 6, name: 'Company B', logo: log2 },
+    { id: 7, name: 'Company C', logo: log3 },
+    { id: 8, name: 'Company D', logo: log4 },
+    { id: 9, name: 'Company A', logo: log1 },
+    { id: 10, name: 'Company B', logo: log2 },
+    { id: 11, name: 'Company C', logo: log3 },
+    { id: 12, name: 'Company D', logo: log4 },
+  
   ];
 
   return (

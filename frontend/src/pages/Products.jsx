@@ -1,4 +1,13 @@
 import React from "react";
+import Ecommerce from '../assets/e-commerce.jpg';
+import application from '../assets/application.jpg';
+import marketing from '../assets/marketing.webp';
+
+import CRM from '../assets/CRM.jpg';
+
+import { Link } from "react-router-dom";
+
+
 
 
 const Products = () => {
@@ -8,32 +17,64 @@ const Products = () => {
       name: "E-Commerce Website",
       type: "Website",
       description: "Customizable and scalable online store solutions.",
-      price: "$1200",
-      image: "",
+      price: "₹12000",
+      image: Ecommerce,
     },
     {
       id: 2,
       name: "Mobile Application",
       type: "Application",
       description: "Seamless and user-friendly mobile app development.",
-      price: "$2500",
-      image: "",
+      price: "₹25000",
+      image: application,
     },
     {
       id: 3,
       name: "CRM Software",
       type: "Software",
       description: "Streamline your business with tailored CRM solutions.",
-      price: "$3000",
-      image: "",
+      price: "₹30000",
+      image: CRM,
     },
     {
       id: 4,
       name: "Marketing Services",
       type: "Other Services",
       description: "Effective strategies to boost your online presence.",
-      price: "$800",
-      image: "",
+      price: "₹8000",
+      image: marketing,
+    },
+    {
+      id: 5,
+      name: "E-Commerce Website",
+      type: "Website",
+      description: "Customizable and scalable online store solutions.",
+      price: "₹12000",
+      image: Ecommerce,
+    },
+    {
+      id: 6,
+      name: "Mobile Application",
+      type: "Application",
+      description: "Seamless and user-friendly mobile app development.",
+      price: "₹25000",
+      image: application,
+    },
+    {
+      id: 7,
+      name: "CRM Software",
+      type: "Software",
+      description: "Streamline your business with tailored CRM solutions.",
+      price: "₹30000",
+      image: CRM,
+    },
+    {
+      id: 8,
+      name: "Marketing Services",
+      type: "Other Services",
+      description: "Effective strategies to boost your online presence.",
+      price: "₹8000",
+      image: marketing,
     },
   ];
 
@@ -43,16 +84,32 @@ const Products = () => {
       name: "CRM Software",
       type: "Software",
       description: "Streamline your business with tailored CRM solutions.",
-      price: "$3000",
-      image: "",
+      price: "₹30000",
+      image: CRM,
     },
     {
       id: 2,
       name: "Mobile Application",
       type: "Application",
       description: "Seamless and user-friendly mobile app development.",
-      price: "$2500",
-      image: "",
+      price: "₹25000",
+      image: application,
+    },
+    {
+      id: 3,
+      name: "E-Commerce Website",
+      type: "Website",
+      description: "Customizable and scalable online store solutions.",
+      price: "₹12000",
+      image: Ecommerce,
+    },
+    {
+      id: 4,
+      name: "Marketing Services",
+      type: "Other Services",
+      description: "Effective strategies to boost your online presence.",
+      price: "₹8000",
+      image: marketing,
     },
   ];
 
@@ -65,11 +122,13 @@ const Products = () => {
         </h2>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+
+       <Link to={"/contact"}> <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              className="bg-white  shadow-md hover:bg-blue-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
               {/* Product Image */}
               <img
@@ -90,17 +149,19 @@ const Products = () => {
             </div>
           ))}
         </div>
+        </Link>
 
         {/* Most Buy Section */}
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
             Most Buy Products
           </h2>
+          <Link to={"/contact"}>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {mostBuyProducts.map((product) => (
               <div
                 key={product.id}
-                className="bg-blue-100 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                className="shadow-md rounded-lg overflow-hidden hover:bg-blue-100 hover:shadow-lg transition-shadow duration-300 "
               >
                 {/* Product Image */}
                 <img
@@ -121,6 +182,7 @@ const Products = () => {
               </div>
             ))}
           </div>
+          </Link>
         </div>
       </div>
     </section>
